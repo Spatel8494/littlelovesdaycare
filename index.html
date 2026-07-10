@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Loves Daycare - Home Away From Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-heart"></i> Little Loves
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#activities" class="nav-link">Activities</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero hero-slider">
+        <div class="hero-slide hero-slide-1 active">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">A warm, joyful place to grow</span>
+                    <h1>Welcome to Little Loves</h1>
+                    <p>Where every child feels loved, safe, and inspired to grow through play, care, and discovery.</p>
+                    <div class="hero-actions">
+                        <button class="cta-btn" onclick="scrollToEnroll()">Enroll Your Child Today</button>
+                        <a href="#about" class="secondary-btn">Explore Our Programs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide hero-slide-2">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">Play, learn, and shine</span>
+                    <h1>Bright Days, Big Smiles</h1>
+                    <p>Creative activities, joyful routines, and caring teachers make each day memorable.</p>
+                    <div class="hero-actions">
+                        <button class="cta-btn" onclick="scrollToEnroll()">Schedule a Visit</button>
+                        <a href="#activities" class="secondary-btn">See Activities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slide hero-slide-3">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <span class="eyebrow">A second home for little ones</span>
+                    <h1>Safe, Nurturing, Full of Wonder</h1>
+                    <p>From morning cuddles to afternoon play, every moment is designed with love.</p>
+                    <div class="hero-actions">
+                        <button class="cta-btn" onclick="scrollToEnroll()">Join Our Family</button>
+                        <a href="#contact" class="secondary-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-dots" aria-label="Hero slideshow controls">
+            <button class="dot active" data-slide="0" aria-label="Show slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Show slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Show slide 3"></button>
+        </div>
+        <div class="hero-hearts">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Little Loves</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Home Away From Home</h3>
+                    <p>We believe every child deserves to feel safe, comfortable, and loved. Our daycare is designed to be a warm extension of your family.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Personalized Care</h3>
+                    <p>Each child receives individualized attention and care tailored to their unique needs, personality, and developmental stage.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Qualified Caregivers</h3>
+                    <p>Our dedicated team of experienced childcare professionals are trained, certified, and passionate about early childhood development.</p>
+                </div>
+            </div>
+            <div class="mission-statement">
+                <h3>Our Mission</h3>
+                <p>To provide a nurturing, safe, and stimulating environment where children develop confidence, curiosity, and love for learning while feeling cherished like family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2>Our Programs & Activities</h2>
+            <div class="activities-grid">
+                <!-- Learning Activities -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Learning & Growing</h3>
+                    <ul class="activity-list">
+                        <li><strong>Early Literacy:</strong> Story time, letter recognition, phonics</li>
+                        <li><strong>Math Basics:</strong> Counting, shapes, patterns</li>
+                        <li><strong>Science Exploration:</strong> Nature activities, sensory play</li>
+                        <li><strong>Language Development:</strong> Communication skills, vocabulary building</li>
+                        <li><strong>Fine Motor Skills:</strong> Puzzles, coloring, crafts</li>
+                    </ul>
+                </div>
+
+                <!-- Fun Activities -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Fun & Play</h3>
+                    <ul class="activity-list">
+                        <li><strong>Creative Play:</strong> Art, music, dramatic play</li>
+                        <li><strong>Outdoor Adventure:</strong> Nature walks, playground time</li>
+                        <li><strong>Games & Sports:</strong> Gross motor activities, team games</li>
+                        <li><strong>Music & Dance:</strong> Singing, movement activities</li>
+                        <li><strong>Indoor Play:</strong> Building blocks, imaginative games</li>
+                    </ul>
+                </div>
+
+                <!-- Nutritious Food -->
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <h3>Healthy Nutrition</h3>
+                    <ul class="activity-list">
+                        <li><strong>Balanced Meals:</strong> Home-prepared, nutritious dishes</li>
+                        <li><strong>Snack Time:</strong> Fresh fruits, yogurt, healthy snacks</li>
+                        <li><strong>Dietary Needs:</strong> Allergies & preferences accommodated</li>
+                        <li><strong>Mealtime Learning:</strong> Table manners, food exploration</li>
+                        <li><strong>Hydration:</strong> Fresh water throughout the day</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Schedule -->
+    <section class="schedule">
+        <div class="container">
+            <h2>Daily Schedule</h2>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <span class="time">7:30 AM - 8:30 AM</span>
+                    <span class="activity">Arrival & Breakfast</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">8:30 AM - 10:00 AM</span>
+                    <span class="activity">Learning Activities & Crafts</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:00 AM - 10:30 AM</span>
+                    <span class="activity">Snack Time</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">10:30 AM - 12:00 PM</span>
+                    <span class="activity">Outdoor Play & Adventure</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">12:00 PM - 1:00 PM</span>
+                    <span class="activity">Lunch</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">1:00 PM - 3:00 PM</span>
+                    <span class="activity">Quiet Time & Rest</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">3:00 PM - 3:30 PM</span>
+                    <span class="activity">Snack & Music</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="time">3:30 PM - 5:30 PM</span>
+                    <span class="activity">Creative Play & Pickup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Parents Say</h2>
+            <div class="testimonial-carousel" aria-label="Parent testimonials">
+                <button class="carousel-btn prev" type="button" aria-label="Previous testimonial">&#10094;</button>
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="stars">★★★★★</div>
+                        <p>"My daughter absolutely loves going to Little Loves! She's learned so much and feels right at home. The team treats her like their own children. Highly recommended!"</p>
+                        <p class="author">- Sarah M., Parent</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"The care and attention each child receives at Little Loves is exceptional. I felt confident leaving my son in such loving hands. Best decision ever!"</p>
+                        <p class="author">- James P., Parent</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>"Little Loves has become like a second family to us. The activities are engaging, the food is delicious and healthy, and most importantly, my child is happy!"</p>
+                        <p class="author">- Emma & David K., Parents</p>
+                    </div>
+                </div>
+                <button class="carousel-btn next" type="button" aria-label="Next testimonial">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose Little Loves?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Safe & Secure Environment</h4>
+                    <p>State-of-the-art safety measures and supervision</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Holistic Development</h4>
+                    <p>We nurture physical, emotional, and cognitive growth</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Regular Communication</h4>
+                    <p>Daily updates and progress reports for parents</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Flexible Scheduling</h4>
+                    <p>Part-time and full-time options available</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Age-Appropriate Activities</h4>
+                    <p>Programs tailored to developmental milestones</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Nutritious Meals</h4>
+                    <p>Home-cooked, balanced meals daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-card">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="98">0</h3>
+                    <p>Parent Satisfaction</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="24">0</h3>
+                    <p>Hours of Care</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="15">0</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <p>Safe & Loving Spaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Enrollment -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch & Enroll</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>123 Sunshine Lane<br>Happy Valley, CA 94000</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>hello@littleloves.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Hours</h4>
+                        <p>Mon - Fri: 7:30 AM - 5:30 PM<br>Closed Weekends & Holidays</p>
+                    </div>
+                </div>
+
+                <div class="enrollment-form">
+                    <h3>Enrollment Form</h3>
+                    <form id="enrollForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Parent/Guardian Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Child's Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Child's Age</option>
+                                <option value="6months-1year">6 months - 1 year</option>
+                                <option value="1-2years">1 - 2 years</option>
+                                <option value="2-3years">2 - 3 years</option>
+                                <option value="3-5years">3 - 5 years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Any special needs or questions?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit Enrollment Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Little Loves Daycare. All rights reserved. | Made with <i class="fas fa-heart"></i> for children and families.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
